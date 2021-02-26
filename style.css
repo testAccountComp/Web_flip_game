@@ -1,0 +1,95 @@
+body {
+	background: #a8b7ba;
+	justify-content: center;
+}
+.box {
+	display: flex;
+	justify-content: center;
+	margin-top: 20%;
+}
+/* .threeBtn {
+	display: flex;
+	justify-content: space-between;
+} */
+.btn {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	/* width: 25%; */
+	font-size: 20pt;
+	background: linear-gradient(328deg, rgba(63, 94, 251, 1) 0%, rgba(70, 252, 246, 1) 100%);
+}
+.menu {
+	text-align: center;
+	width: 350px;
+	height: 250px;
+	background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	border: 1px solid white;
+	box-shadow: 10px 15px 16px 0px rgba(0, 0, 0, 0.85);
+	color: white;
+}
+.hide {
+	display: none;
+}
+.menu h1 {
+	font-size: 40pt;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+img {
+	width: 99%;
+	height: auto;
+	padding-top: 17.5%;
+}
+.cardRows {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20%;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 2%;
+}
+.card {
+	width: 160px;
+	height: 180px;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	display: flex;
+	align-items: center;
+}
+.inner {
+	border-radius: 20px 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border: 3px solid;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	text-align: center;
+}
+.front {
+	background: #f7feff;
+	text-align: center;
+	font-size: 40pt;
+	font-weight: bolder;
+	line-height: 300%;
+}
+.back {
+	background: #f7feff;
+	transform: rotateY(180deg);
+}
+.is-flipped {
+	transform: rotateY(180deg);
+}
+.match div {
+	background: greenyellow;
+}
+.afterMatch div {
+	opacity: .2;
+	filter: blur(1px);
+}
